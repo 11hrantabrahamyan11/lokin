@@ -1,0 +1,83 @@
+.progress {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px !important;
+  }
+
+  &__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px 0 35px;
+
+    &_text {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 21px;
+      color: #333333;
+
+      &:first-child {
+        padding-left: 34px;
+      }
+
+      &:nth-child(5) {
+        padding-right: 18px;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 93px 0 94px;
+
+    &_step {
+      width: 28px;
+      height: 28px;
+      border: 2px solid #dfe4ef;
+      box-sizing: border-box;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 21px;
+      color: #0066ff;
+      padding-top: 1px;
+
+      &:nth-child(-n + 4) {
+        border: 2px solid #0066ff;
+      }
+
+      &:nth-child(-n + 6) {
+        color: #333333;
+      }
+
+      &:nth-child(5) {
+        border: 2px solid #ff238d;
+      }
+    }
+
+    .divione {
+      height: 4px;
+      background: #0066ff;
+    }
+
+    .divitwo {
+      height: 4px;
+      background: linear-gradient(90deg, #0066ff 0%, #ff238d 100%);
+    }
+  }
+
+  &__divider {
+    width: 120px;
+    height: 2px;
+    background: #dfe4ef;
+  }
+}
